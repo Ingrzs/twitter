@@ -7,5 +7,20 @@ constructor(id,username,name,bio,dateCreated,lastUpdate){
     this.dateCreated = new Date()
     this.lastUpdate = new Date()
 }
+    get getusername (){
+       return this.username
+    }
+
+    get getbio(){
+        return this.bio
+    }
+    
+    get getDateCreated(){
+        return this.dateCreated
+    }
+
+    get getLastUpdated(){
+        return this.lastUpdate
+    }
 }
 module.exports = User
