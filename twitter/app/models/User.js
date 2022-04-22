@@ -22,5 +22,15 @@ constructor(id,username,name,bio,dateCreated,lastUpdate){
     get getLastUpdated(){
         return this.lastUpdate
     }
+
+
+     set setusername(newusername){
+         this.username = newusername
+     }
+
+     set setbio(newbio){
+         this.bio = newbio
+     }
+
 }
 module.exports = User
