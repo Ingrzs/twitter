@@ -26,6 +26,15 @@ describe("Test para usuarios del servicio",()=>{
     expect(user.username).toBe("ramirito")
 })
 
-  
+  test('Requerimiento cuatro',()=>{
+      const user1 = UserServices.create(1,"ramirozs1","rzs")
+      const user2 = UserServices.create(1,"ramirozs2","rzs")
+      const user3 = UserServices.create(1,"ramirozs3","rzs")
+      const usernames = UserServices.getAllUsernames([user1,user2,user3])
+      expect(usernames).toContain("ramirozs1")
+      expect(usernames).toContain("ramirozs2")
+      expect(usernames).toContain("ramirozs3")
+
+  })
 
 } )
