@@ -7,9 +7,9 @@ class UserView {
     }
 
     else if(typeof payload.username === 'string' && typeof payload.name === 'string' && typeof payload.id === 'number') {
-        return UserService.create(payload.id, payload.username, payload.name)
+        return UserService.create(payload.id, payload.username, payload.name) //esto es para el requerimiento tres
       } else{
-        return {error: "el payload necesitan tener un valor válido"}
+        return {error: "el payload necesitan tener un valor válido"}  //para el requeimiento dos ya que si no se cumple de que algun valor sea no valido
       }
 }
 }
